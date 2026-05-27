@@ -92,6 +92,7 @@ font-size: 8.5vw;
 line-height: 8.5vw;
 text-transform: uppercase;
 font-weight: 900;
+white-space: nowrap;
 }
 #page1 h1 svg{
     background-color: #0BA34E;
@@ -126,7 +127,7 @@ transform: scale(1.1)
   
 }
 #page1-tags h4:hover{
-background-color: white;
+background-color: rgb(246, 241, 241);
 color: #111;
 }
 #page1-tags h4:nth-last-child(2){
@@ -457,7 +458,6 @@ summary::-webkit-details-marker{
 #page5{
 min-height: 100vh;
     width: 100%;
-    /* background-color: #111; */
     background-color: #fff;
     padding: 10vh 10vw;
 }
@@ -465,7 +465,6 @@ min-height: 100vh;
 #page5 > h1 {
     font-size: 5.5vw;
     color: #000;
-    /* background-color: red; */
     padding-left: 23vw;
     padding-right: 5vw;
     line-height: 5.8vw;
@@ -474,7 +473,6 @@ min-height: 100vh;
 }
 
 #page5-content {
-    /* background-color: red; */
     color: #000;
     display: flex;
     align-items: flex-start;
@@ -610,14 +608,549 @@ min-height: 100vh;
    .nav-part2 , .nav-elem , #nav-bottom{
        display: none;
     }
+    nav button{
+        padding: 4px 10px;
+        white-space: nowrap;
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    nav button svg{
+        height: 2vw;
+        margin-left: 1.6vw;
+    }
+    nav{
+        align-items: center;
+        padding: 2vw 3vw;
+    }
+    nav h1{
+        font-size: 4.1vw;
+    }
+    #page1{
+        min-height: 70vh;
+        width: 100%;
+    }
+    #movingdiv{
+      
+        width:70%;
+     
+    }
+    .move img{
+        height: 4vh;
+        margin:1vh 1.5vh;
+    }
+    #page2{
+        min-height: 70vh;
+        width: 100%;
+        padding: 0vw 10px;
+        display: block;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 1vw;
+  
+  
+    }
+    #page2-left{
+        height: 30%;
+        width: 100%;
+        gap:3vw;
+    
+        justify-content: center;
+
+    }
+
+#page2-left p{
+    font-size: 2.5vw;
+}
+#page2-left h5{
+    width: 100%;
+    font-weight: 400;
+    font-size: 3vw;
+}
+#page2-right{
+    height: 60%;
+    width: 100%;
+}
+.right-elem h2{
+    font-size: 3vw;
+    font-weight: 400;
+}
+.right-elem{
+    padding-bottom: 2vw;
+    border-top: 1px solid #333;
+}
+#page1-tags h4{
+    font-size: 1.6vw;
+    margin-top: 3vh;
+    margin-left:2px ;
   
 }
-/* @media(max-width:600px){
-    #nav-bottom{
-        display: none;
-    
-    }
-} */
 
+#page3{
+    min-height: 60vh;
+    padding-bottom: 4vh;
+}
+.section{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2vh 10px;
+    padding-bottom: 3vw;
+}
+.section-left{
+   min-height: 20%;
+    width: 100%;
+    padding-top: 1vh;
+}
+.section-left h2{
+    font-size: 3vw;
+}
+.section-left p{
+    color: #000;
+    margin-top:1vh;
+    font-size:2vw;
+    margin-bottom: 2vh;
+}
+.section-right{
+    min-height: 75%;
+    width: 100%;
+
+}
+
+#page4{
+    min-height: 45vh;
+
+    padding: 3vh 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+
+
+#page4 button{
+   
+    padding: 1vw 2.5vw;
+    font-size: 1.5vw;
+    position:relative;
+    top:1vh;
+}
+#page4-right{
+    width: 100%;
+
+}
+
+#page4-span2{
+    width: 0;
+    display: none;
+}
+#page4-content{
+    width: 100%;
+    
+    margin-top: 3vh;
+    padding: 2vh 0;
+   
+}
+
+#page4-content h1{
+    font-size:5vw;
+  
+}
+#page4-content #flex{
+    display: flex;
+    margin-top: 4vh;
+    gap:4px;
+    margin-bottom: 4vh;
+}
+#page4-content #flex h4{
+    padding: 5px 10px;
+    font-size: 1.7vw;
+}
+.page4-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap:1vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+
+}
+.page4-elem p{
+    width: 100%;
+    font-size: 2vw;
+}
+.page4-elem h3{
+    font-size: 2.7vw;
+}
+.page4-elem img{
+    height: 2vw;
+}
+
+
+
+#page5{
+    min-height: 70vh;
+    padding: 5vh 10px;
+    width: 100%;
+    }
+    
+    #page5 > h1 {
+        font-size: 5.5vw;
+        color: #000;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-bottom: 3vh;
+        text-align: center;
+ 
+    }
+    
+    #page5-content {
+        color: #000;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 5vh 0;
+    }
+    
+    #page5-content #right-5 {
+        width: 100%;
+    }
+    
+    #page5-content #right-5 p {
+        font-size: 3vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+    
+    #blue-btn h4 {
+        font-size: 1vw;
+    }
+    
+    #page5-bottom {
+        min-height: 20vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    #btm5-part1 {
+        width: 0%;
+    }
+    
+
+    
+    #btm5-part3 {
+      width: 22%;
+    }
+    
+    #btm5-part4 {
+    width: 22%;
+    }
+    
+    #btm5-part5 {
+        width: 22%;
+    }
+    
+    .btm5-parts {
+        padding: 1vh 0.6vw;
+    }
+    
+    .btm5-parts h5 {
+       
+        font-size: 2vw;
+        margin-bottom: 2vh;
+    }
+    
+    .btm5-parts h4 {
+       
+        width: 80%;
+        padding: 5px 10px;
+    
+        font-size: 1vw;
+     
+    }
+
+
+
+
+}
+
+@media(max-width:400px){
+    .nav-part2 , .nav-elem , #nav-bottom{
+        display: none;
+     }
+     nav button{
+         padding: 4px 10px;
+         white-space: nowrap;
+         font-size: 2vw;
+         font-weight: 500;
+     }
+     nav button svg{
+         height: 2vw;
+         margin-left: 1.6vw;
+     }
+     nav{
+         align-items: center;
+         padding: 2vw 3vw;
+     }
+     nav h1{
+         font-size: 5vw;
+     }
+     #page1{
+         min-height: 70vh;
+         width: 100%;
+    }
+    #movingdiv{
+        width:80%;
+        bottom: 10%;
+    }
+    .move img{
+        height: 3.6vh;
+        margin:1vh 1.5vh;
+    }
+    #page2{
+        min-height: 80vh;
+        width: 100%;
+        padding: 0vw 10px;
+        padding-bottom: 1vw;
+      
+  
+   
+        display: block;
+        justify-content: start;
+        align-items: start;
+  
+  
+    }
+    #page2-left{
+        height: 30%;
+        width: 100%;
+        gap:3vw;
+    
+        justify-content: center;
+
+    }
+
+#page2-left p{
+    font-size: 2.5vw;
+}
+#page2-left h5{
+    width: 100%;
+    font-weight: 400;
+    font-size: 3vw;
+}
+#page2-right{
+    height: 60%;
+    width: 100%;
+}
+.right-elem h2{
+    font-size: 3vw;
+    font-weight: 400;
+}
+.right-elem{
+    padding-bottom: 2vw;
+    border-top: 1px solid #333;
+}
+#page1-tags h4{
+    font-size: 1.6vw;
+    margin-top: 3vh;
+    margin-left:2px ;
+  
+}
+
+#page3{
+    min-height: 60vh;
+    padding-bottom: 4vh;
+}
+.section{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2vh 10px;
+    padding-bottom: 3vw;
+}
+.section-left{
+   min-height: 20%;
+    width: 100%;
+    padding-top: 1vh;
+}
+.section-left h2{
+    font-size: 3vw;
+}
+.section-left p{
+    color: #000;
+    margin-top:1vh;
+    font-size:2vw;
+    margin-bottom: 2vh;
+}
+.section-right{
+    min-height: 75%;
+    width: 100%;
+}
+#page4{
+    min-height: 45vh;
+
+    padding: 3vh 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+
+
+#page4 button{
+   
+    padding: 1vw 2.5vw;
+    font-size: 1.5vw;
+    position:relative;
+    top:1vh;
+}
+#page4-right{
+    width: 100%;
+
+}
+
+#page4-span2{
+    width: 0;
+    display: none;
+}
+#page4-content{
+    width: 100%;
+    
+    margin-top: 3vh;
+    padding: 2vh 0;
+   
+}
+
+#page4-content h1{
+    font-size:5vw;
+  
+}
+#page4-content #flex{
+    display: flex;
+    margin-top: 4vh;
+    gap:4px;
+    margin-bottom: 4vh;
+}
+#page4-content #flex h4{
+    padding: 5px 10px;
+    font-size: 1.7vw;
+}
+.page4-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap:1vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+
+}
+.page4-elem p{
+    width: 100%;
+    font-size: 2vw;
+}
+.page4-elem h3{
+    font-size: 2.7vw;
+}
+.page4-elem img{
+    height: 2vw;
+}
+
+
+
+#page5{
+    min-height: 70vh;
+    padding: 5vh 10px;
+    width: 100%;
+    }
+    
+    #page5 > h1 {
+        font-size: 5.5vw;
+        color: #000;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-bottom: 3vh;
+        text-align: center;
+ 
+    }
+    
+    #page5-content {
+        color: #000;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 5vh 0;
+    }
+    
+    #page5-content #right-5 {
+        width: 100%;
+    }
+    
+    #page5-content #right-5 p {
+        font-size: 3vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+    
+    #blue-btn h4 {
+        font-size: 1vw;
+    }
+    
+    #page5-bottom {
+        min-height: 20vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    #btm5-part1 {
+        width: 0%;
+    }
+    
+
+    
+    #btm5-part3 {
+      width: 22%;
+    }
+    
+    #btm5-part4 {
+    width: 22%;
+    }
+    
+    #btm5-part5 {
+        width: 22%;
+    }
+    
+    .btm5-parts {
+        padding: 1vh 0.6vw;
+    }
+    
+    .btm5-parts h5 {
+       
+        font-size: 2vw;
+        margin-bottom: 2vh;
+    }
+    
+    .btm5-parts h4 {
+       
+        width: 80%;
+        padding: 5px 10px;
+    
+        font-size: 1vw;
+     
+    }
+
+
+
+ }
 
 
