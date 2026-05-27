@@ -587,9 +587,7 @@ min-height: 100vh;
     display: flex;
     align-items: center;
     font-weight: 500;
-
 }
-
 .btm5-parts h4 span {
     display: flex;
     align-items: center;
@@ -607,3 +605,19 @@ min-height: 100vh;
     height: 100vh;
     background-color: #111;
 } */
+
+@media(max-width:600px){
+   .nav-part2 , .nav-elem , #nav-bottom{
+       display: none;
+    }
+  
+}
+/* @media(max-width:600px){
+    #nav-bottom{
+        display: none;
+    
+    }
+} */
+
+
+
