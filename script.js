@@ -102,3 +102,55 @@ cards.forEach((card) => {
     observer.observe(card);
 });
 
+// CUSTOM CURSOR
+
+let cursor = document.querySelector("#cursor")
+
+document.addEventListener("mousemove", function(dets){
+
+    cursor.style.left = dets.x + "px"
+    cursor.style.top = dets.y + "px"
+
+})
+
+
+// HOVER EFFECT
+
+let elems = document.querySelectorAll(
+    ".right-elem,.page4-elem,button"
+)
+
+elems.forEach(function(elem){
+
+    elem.addEventListener("mouseenter", function(){
+
+        cursor.style.scale = "3"
+
+    })
+
+    elem.addEventListener("mouseleave", function(){
+
+        cursor.style.scale = "1"
+
+    })
+
+})
+
+
+
+// PROGRESS BAR
+let progress= document.querySelector("#progress")
+window.addEventListener("scroll", function(){
+
+    let scrollTop = window.scrollY
+
+    let docHeight =
+    document.documentElement.scrollHeight -
+    window.innerHeight
+
+    let scrollPercent =
+    (scrollTop/docHeight)*100
+
+progress.style.width = scrollPercent + "%"
+
+})
